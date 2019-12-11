@@ -1,0 +1,346 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+}
+
+* {
+    margin:0rem;
+}
+
+.header {
+    background-color: #0d7619;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-left: 2.5rem;
+    
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    padding-left:125rem;
+    
+}
+
+.menu li a {
+    color:white;
+    text-decoration: none;
+    font-family: Arial;
+    padding:0.5rem;
+    font-family: 'Dosis', sans-serif;
+    font-size:2.3rem;
+}
+
+.banniere {
+    width: 100%;
+    min-height: 78rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+
+#b1t4 {
+    font-size: 1.9rem;
+    position: relative;
+    font-family: 'Dosis-Bold', sans-serif;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+.b-txt1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+}
+
+.b-txt2 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    position: relative;
+    font-family: 'Dosis-Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+.b-txt3 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    position: relative;
+    font-family: 'Dosis-Bold', sans-serif;
+    text-transform: uppercase;
+    color: limegreen;
+}
+
+.b-txt4 {
+    margin-bottom: 2rem;
+}
+
+/** SECTION CONFERENCE **/
+
+.b1-txt {
+    text-align: center;
+}
+
+.b1-txt1 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    position: relative;
+    font-family: 'Dosis-Bold', sans-serif;
+    text-transform: uppercase;  
+}
+
+.b1-txt2 {
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+}
+
+.b1-txt2 p{
+    line-height: 3.2rem;
+}
+
+
+.conference {
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+}
+
+#bendeau {
+    width: 100%;
+    height: 36rem;
+    background-size: 100%;
+}
+
+/** SECTION 3 **/
+
+
+.section3 {
+    font-family: 'Dosis-Bold', sans-serif;
+    width: 100%;
+    background-color: floralwhite;
+    min-height: 50rem;
+    background-size: 100%;
+   display: flex; 
+    justify-content: center;
+}
+
+.section3-program{
+    display: flex;
+}
+
+
+
+.gauche_t1 {
+    color:limegreen;
+}
+.txt_g1 {
+    display:flex;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.txt_g2 {
+    display:flex;
+    margin-bottom: 0.5rem;
+}
+
+.txt_g3 {
+    display:flex;
+    margin-bottom: 0.5rem;
+}
+
+.txt_g4 {
+    display:flex;
+    margin-bottom: 0.5rem;
+}
+
+.txt_g5 {
+    display:flex;
+    margin-bottom: 0.5rem;
+}
+
+.g-txt1 {
+    margin-left: 0.5rem;
+}
+
+.g-txt2 {
+    margin-left: 0.5rem;
+}
+
+.g-txt3 {
+    margin-left: 0.5rem;
+}
+
+.g-txt4 {
+    margin-left: 0.5rem;
+}
+
+.g-txt5 {
+    margin-left: 0.5rem;
+}
+
+.txt_d1 {
+    display:flex;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.txt_d2 {
+    display:flex;
+    margin-bottom: 0.5rem;
+}
+
+.txt_d3 {
+    display:flex;
+    margin-bottom: 0.5rem;
+}
+
+.txt_d4 {
+    display:flex;
+    margin-bottom: 0.5rem;
+}
+
+
+.d-txt1 {
+    margin-left: 0.5rem;
+}
+
+.d-txt2 {
+    margin-left: 0.5rem;
+}
+
+.d-txt3 {
+    margin-left: 0.5rem;
+}
+
+.d-txt4 {
+    margin-left: 0.5rem;
+}
+
+.section3_bloc_droite {
+    margin-left:7.5rem;
+}
+
+.section3_bloc_gauche {
+    margin-right:7.5rem;
+}
+
+#b2t1 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    position: relative;
+    font-family: 'Dosis-Bold', sans-serif;
+    text-transform: uppercase;  
+}
+
+.section3-content {
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+}
+
+.g_titre {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Dosis-Bold', sans-serif;
+    text-transform: uppercase; 
+    text-align: center;
+    color: darkolivegreen;
+
+}
+
+.d_titre {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Dosis-Bold', sans-serif;
+    text-transform: uppercase; 
+    text-align: center;
+    color: darkolivegreen;
+
+}
+
+.g-txt {
+    font-size:1.7rem;
+}
+
+.d-txt {
+    font-size:1.7rem;
+}
+
+.section3_titre {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.trait2 {
+    width: 160px;
+    margin-bottom: 5.5rem;
+    margin-left: 35rem;
+}
+
+.trait1{
+    width: 160px;
+    margin-bottom: 5.5rem;
+    margin-left: 87rem;
+    margin-top: 5.5rem;
+}
+
+.section4{
+    min-height:60rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url(http://127.0.0.1:8000/wp-content/themes/my-theme/assets/img/programme.png) no-repeat 100% 100% #fffdf1;
+}
+
+.section4 div{
+    text-align:center;
+    font-size:18px;
+}
+
+.section4 #grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "m1 m2";
+                    
+}
+
+.section4 #grid #menu1{
+    grid-area : m1;
+}
+.section4 #grid div h2{
+    color:green;
+   margin-bottom:20px;
+}
+.section4 #grid div p{
+   text-align: left;
+   line-height: 40px;
+}
+.section4 #grid #menu2{
+    grid-area : m2;
+}
+.section4 div button{
+   border-radius:15px;
+   background-color: green;
+   color: white;
+   font-size:2rem;
+   padding:0.5rem;
+   margin-top:1rem;
+   border:1px solid green;
+}
