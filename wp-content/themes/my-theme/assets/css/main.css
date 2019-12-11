@@ -338,9 +338,216 @@ body {
 .section4 div button{
    border-radius:15px;
    background-color: green;
-   color: red;
+   color: white;
    font-size:2rem;
    padding:0.5rem;
    margin-top:1rem;
    border:1px solid green;
+}
+
+.section5{
+    background-color: white;
+    min-height:70rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left:100px;
+    padding-right: 100px;
+}
+.section5 div h1 {
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    text-transform:uppercase;
+}
+.section5 div h1:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    right: 40%;
+    height: .1rem;
+    background: #ddd;
+    margin-top:10px;
+}
+.section5 .p{
+    font-size: 18px;
+    margin-top:20px;
+}
+.section5 img{
+    border-radius:50px;
+}
+.section5 .portrait{
+    display:flex;
+    margin-top:50px;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+.section5 div{
+    width:60%;
+}
+.section5 .portrait2{
+    display:flex;
+    margin-top:50px;
+    width:100%;
+}
+.section5 .portrait2 .div1{
+    margin-left:200px;
+}
+.section5 .portrait2 .div2{
+    margin-right:200px;
+}
+.section5 .green{
+    color:green;
+    margin-top:20px;
+    font-size:14px;
+}
+.section5 button{
+    border-radius:20px;
+    background-color: #9acf64;
+    color: white;
+    font-size:1.5rem;
+    padding:1rem;
+    margin-top:1rem;
+}
+
+.section6{
+    background-color: white;
+    min-height:50rem;
+    display:flex;
+}
+.section6 div{
+    width:100%;
+}
+.section6 div h1 {
+    position: relative;
+    margin-top:60px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    text-align:center;
+    text-transform:uppercase;
+}
+.section6 div h1:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    right: 45%;
+    height: .1rem;
+    background: #ddd;
+    margin-top:10px;
+}
+.section6 div .divimg{
+    background-image: url(../img/lieu.png);
+    min-height:60rem;
+    background-repeat:no-repeat;
+}
+.section6 div div .img{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:35px;
+}
+.section6 div div .img2{
+    padding-top:150px;
+}
+.section6 div div p{
+    margin-left:20px;
+    font-size:18px;
+}
+.section6 .rect{
+    background-color:#9acf64;
+    width:25%;
+    color:white;
+    margin-left:155px;
+    min-height:690px;
+}
+.section6 button{
+    border-radius:20px;
+    background-color: #9acf64;
+    color: white;
+    font-size:1.5rem;
+    padding:1rem;
+    margin-left:80%;
+}
+hr{
+    margin-top:30px;
+    color: white;
+    width:260px;
+    margin-left:50px;
+}
+
+.section7{
+    min-height:70rem;
+}
+.section7 div h1 {
+   margin-top:60px;
+   position: relative;
+   font-size: 32px;
+   margin-bottom: 20px;
+   padding-bottom:20px;
+   text-align:center;
+   text-transform:uppercase;
+}
+.section7 div h1:before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 45%;
+   right: 45%;
+   height: .1rem;
+   background: #ddd;
+   margin-top:10px;
+}
+.section7 .grid{
+   display:grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-areas:
+               "v1 v2"
+   ;
+   text-align:center;
+   grid-gap:10px;
+}
+.section7 .grid .vi1{
+   grid-area: v1;
+}
+.section7 .grid .vi1{
+   grid-area: v2;
+}
+.section7 .grid2 div{
+   display:flex;
+   align-items:center;
+}
+.section7 .grid2 p{
+   margin-left:50px;
+   font-size:20px;
+}
+.section7 .grid2{
+   display:grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-areas:
+               "v1 v2"
+               "v3 v4"
+   ;
+   grid-gap:10px;
+}
+.section7 .grid2 .vi1{
+   grid-area: v1;
+
+}
+.section7 .grid2 .vi2{
+   grid-area: v2;
+   
+}
+.section7 .grid2 .vi3{
+   grid-area: v3;
+   
+}
+.section7 .grid2 .vi4{
+   grid-area: v4;
+   
 }
