@@ -26,78 +26,120 @@ if ( have_posts() ) {
 
     $programe_image = get_field('image_programme');
 
-    
+    $programme_register_link = get_field('programme_register_link');
+
+    var_dump('orateur1');
     
     
 
 ?>
 
-<section class="banniere" style="background-image : url(<?php echo $banner_background_image['url'] ?>)">
+ <!-- SECTION 1 -->
+
+<section class="section1" style="background-image : url(<?php echo $banner_background_image['url'] ?>)">
     
     <div class="b-txt">
+
         <p class="b-txt1"><?php the_field('banner_baseline') ?></p>
         <p class="b-txt2"><?php the_field('banner_title_brown') ?></p>
         <p class="b-txt3"><?php the_field('banner_title_green') ?></p>
-        <p class="b-txt4"><a id="b1t4" href="<?php echo $banner_register_link['url'] ?>"><?php echo $banner_register_link['title'] ?></a></p>    
+        <p class="b-txt4"><a id="b1t4" href="<?php echo $banner_register_link['url'] ?>"><?php echo $banner_register_link['title'] ?></a></p> 
+
     </div>
     
 </section>
 
-<section class="conference">
+<!-- FIN SECTION 1 -->
+
+<!-- SECTION 2 -->
+
+<section class="section2">
+
     
-    <div class="b1-txt">
-        <p class="b1-txt1"><?php the_field('conference_title') ?></p>
-        <div class="trait1"><hr></div>
-        <div class="b1-txt2"><?php the_field('conference_content') ?></div>    
+    <div>
+
+        <h1><?php the_field('conference_title') ?></h1>
+
+        <div class="b1-txt">
+
+            
+            <div class="trait1"><hr></div>
+            <div class="b1-txt2"><?php the_field('conference_content') ?></div>    
+            
+        </div>
+
     </div>
     
 </section>
 
-<div id="bendeau" style="background-image : url(<?php echo $image_suivante['url'] ?>)">
+<!-- FIN SECTION 2 -->
+
+<!-- SECTION 3 -->
+
+<section class="section3" style="background-image : url(<?php echo $image_suivante['url'] ?>)">
     
-</div>
+</section>
+
+<!-- FIN SECTION 3 -->
+
+<!-- SECTION 4 -->
 
 <section class="section4" style="background-image: url(<?php echo $programe_image['url']; ?>)">
+
+    
+
     <div>
-    <p class="b1-txt1"><?php the_field('title_programme') ?></p>
+
+        <h1><?php the_field('title_programme') ?></h1>
+        
         <div id="grid">
             <div id="menue1">
                 <h2><?php the_field('part_title_1'); ?></h2>
                 
-        <?php        
-          $programs = get_field('content_part_1');
-            foreach($programs as $program){  
-                echo "<p><b>".$program['hour']."</b>".$program['description']."</p>"; 
-            }
-        ?>
+                <?php        
+                $programs = get_field('content_part_1');
+                    foreach($programs as $program){  
+                        echo "<p><b>".$program['hour']."   </b>".$program['description']."</p>"; 
+                    }
+                ?>
             </div>
             <div id="menue2">
                 <h2><?php the_field('part_title_2'); ?></h2>
-        <?php     
-            $programs = get_field('content_part_2');
-            foreach($programs as $program){  
-                echo "<p><b>".$program['hour']."</b>".$program['description']."</p>";  
-            }
-        ?>
+                <?php     
+                    $programs = get_field('content_part_2');
+                    foreach($programs as $program){  
+                        echo "<p><b>".$program['hour']."   </b>".$program['description']."</p>";  
+                    }
+                ?>
             
             </div>
+
+            
         </div>
-        <button><?php the_field('programme_register_link');?></button>
+        <p class="b-txt4"><a id="b1t4" href="<?php echo $programme_register_link['url'] ?>"><?php echo $programme_register_link['title'] ?></a></p>
     </div>
 </section>
 
+<!-- FIN SECTION 4 -->
+
+<!-- SECTION 5 -->
+
 <section class="section5">
+
+    
+
     <div>
-        <h1>Les orateurs</h1>
-        <p class="p"><?php the_field('title_orateur');?></p>
+
+        <h1><?php the_field('titre_orateur');?></h1>
+        
         <div class="portrait">
             <?php     
-                $programs = get_field('orateur1');
-                foreach($programs as $program){ 
+                $orateur = get_field('orateur1');
+                foreach($orateur as $orateurs){ 
                     echo "<div>";
-                    echo "<img src=".get_template_directory_uri().$program['img']."width='100' height='100'>";
-                    echo "<p class='green'>".$program['nom']."</p>";
-                    echo "<p>".$program['desc']."</p>";
+                    echo "<img src='http://localhost/wordpressfinal/wp-content/uploads/2019/12/portrait.jpg' width='100' height='100'>";
+                    echo "<p class='green'>".$orateurs['nom']."</p>";
+                    echo "<p>".$orateurs['desc']."</p>";
                     echo "<button>Lire la video</button>";
                     echo "</div>";
                 }
@@ -105,23 +147,23 @@ if ( have_posts() ) {
         </div>
         <div class="portrait2">
             <?php     
-                $programs = get_field('orateur2');
-                foreach($programs as $program){ 
+                $orateur = get_field('orateur2');
+                foreach($orateur as $orateurs){ 
                     echo "<div class='div1'>";
-                    echo "<img src=".get_template_directory_uri().$program['img']."width='100' height='100'>";
-                    echo "<p class='green'>".$program['nom']."</p>";
-                    echo "<p>".$program['desc']."</p>";
+                    echo "<img src='http://localhost/wordpressfinal/wp-content/uploads/2019/12/portrait.jpg' width='100' height='100'>";
+                    echo "<p class='green'>".$orateurs['nom']."</p>";
+                    echo "<p>".$orateurs['desc']."</p>";
                     echo "<button>Lire la video</button>";
                     echo "</div>";
                 }
             ?>
             <?php     
-                $programs = get_field('orateur3');
-                foreach($programs as $program){ 
+                $orateur = get_field('orateur3');
+                foreach($orateur as $orateurs){ 
                     echo "<div class='div2'>";
-                    echo "<img src=".get_template_directory_uri().$program['img']."width='100' height='100'>";
-                    echo "<p class='green'>".$program['nom']."</p>";
-                    echo "<p>".$program['desc']."</p>";
+                    echo "<img src='http://localhost/wordpressfinal/wp-content/uploads/2019/12/portrait.jpg' width='100' height='100'>";
+                    echo "<p class='green'>".$orateurs['nom']."</p>";
+                    echo "<p>".$orateurs['desc']."</p>";
                     echo "<button>Lire la video</button>";
                     echo "</div>";
                 }
@@ -130,9 +172,18 @@ if ( have_posts() ) {
     </div>
 </section>
 
+<!-- FIN SECTION 5 -->
+
+<!-- SECTION 6 -->
+
 <section class="section6">
+
+    
+
     <div>
+
         <h1>Information Pratiques</h1>
+        
         <div class="divimg">
             <div class="rect">
                 <div class="img img2">
@@ -160,9 +211,18 @@ if ( have_posts() ) {
     </div>
 </section>
 
+<!-- FIN SECTION 6 -->
+
+<!-- SECTION 7 -->
+
 <section class="section7">
+
+    
+
     <div>
+
         <h1>vidéos</h1>
+        
         <div class="grid">
             <div class="vi1">
                 <iframe src="<?php the_field('video_url'); ?>" width="100%" height="500" frameborder="0" allowfullscreen></iframe> 
@@ -194,6 +254,8 @@ if ( have_posts() ) {
         </div>
     </div>
 </section>
+
+<!-- FIN SECTION 7 -->
 
     
     
