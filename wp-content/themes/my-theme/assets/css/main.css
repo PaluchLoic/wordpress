@@ -402,7 +402,32 @@ hr{
 /** SECTION 7 **/
 
 .section7 {
+    font-family: 'Dosis-Bold', sans-serif;
+    margin-top: 3rem;
+    margin-bottom:3rem;
+}
 
+.section7 div{
+    width:100%;
+}
+.section7 div h1 {
+    position: relative;
+    margin-top:60px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    text-align:center;
+    text-transform:uppercase;
+}
+.section7 div h1:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    right: 45%;
+    height: .1rem;
+    background: #ddd;
+    margin-top:10px;
 }
 
 /** FIN SECTION 7 **/
@@ -410,7 +435,35 @@ hr{
 /** SECTION 8 **/
 
 .section8 {
-    
+    font-family: 'Dosis-Bold', sans-serif;
+    background-color: #f7f6f3;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
+
+.section8 div{
+    width:100%;
+}
+.section8 div h1 {
+    position: relative;
+    margin-top:60px;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    text-align:center;
+    text-transform:uppercase;
+}
+.section8 div h1:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    right: 45%;
+    height: .1rem;
+    background: #ddd;
+    margin-top:10px;
 }
 
 /** FIN SECTION 8 **/
@@ -422,3 +475,22 @@ hr{
 }
 
 /** FIN SECTION 9 **/
+
+/** FOOTER **/
+
+.footer {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #333333;
+}
+
+.footer a {
+    font-family: 'Dosis', sans-serif;
+    color:white;
+    font-size: 1.7rem;
+    padding-left: 3rem;
+    text-decoration: none;
+}
+
+/** FIN FOOTER **/

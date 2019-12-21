@@ -232,7 +232,7 @@ if ( have_posts() ) {
 
     <div>
 
-        <h1></h1>
+        <h1><?php the_field('titre_videos');?></h1>
 
     </div>
 
@@ -246,7 +246,7 @@ if ( have_posts() ) {
 
     <div>
 
-        <h1></h1>
+        <h1><?php the_field('titre_actus');?></h1>
 
     </div>
 
@@ -260,7 +260,7 @@ if ( have_posts() ) {
 
     <div>
 
-        <h1></h1>
+        
 
     </div>
 
